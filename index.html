@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer de 5 Minutos</title>
+    <link rel="stylesheet" href="Assets/Styles/style.css">
+</head>
+<body>
+    <section id="timer">
+        <h1 id="selected_timer">
+            <abbr title="Trocar Para o Cronômetro">Timer</abbr>
+        </h1>
+        <h2><span id="minutos">5m</span><span id="segundos">00s</span></h2>
+
+        <div>
+            <button id="btn_iniciar">INICIAR</button>
+            <button id="btn_parar">PARAR</button>
+            <button id="btn_resetar">RESET</button>
+        </div>
+    </section>
+    <section id="cronometro">
+        <h1 id="selected_cronometro">
+            <abbr title="Trocar Para o Timer">Cronômetro</abbr>
+        </h1>
+        <h2><span id="dias_cro">00d</span> <span id="horas_cro">00h</span> <span id="minutos_cro">00m</span><span id="segundos_cro">00s</span></h2>
+
+        <div>
+            <button id="btn_iniciar2">INICIAR</button>
+            <button id="btn_parar2">PARAR</button>
+            <button id="btn_resetar2">RESET</button>
+        </div>
+    </section>
+    <script src="Assets/Js/Timer.js"></script>
+    <script src="Assets/Js/Cronometro.js"></script>
+</body>
+</html>
