@@ -5,17 +5,25 @@ let segundos_cronometrados = document.querySelector('#segundos_cro')
 let minutos_cronometrados = document.querySelector('#minutos_cro')
 let horas_cronometrados = document.querySelector('#horas_cro')
 let dias_cronometrados = document.querySelector('#dias_cro')
+let parar_cronometro = false
 let tempo = 0
 let s = 0
 let m = 0
 let h = 0
 let d = 0
 
+cronometro.addEventListener('click', () => {
+    clearInterval(intervalId)
+    parar_cronometro = true
+    btn_parar_cronometro.style.display = 'none'
+    btn_iniciar_cronometro.style.display = 'block'
+})
+
 btn_iniciar_cronometro.addEventListener('click', () => {
-    parar = false
+    parar_cronometro = false
     btn_iniciar_cronometro.style.display = 'none'
     btn_parar_cronometro.style.display = 'block'
-    if (!parar) {
+    if (!parar_cronometro) {
         intervalId = setInterval(() => {
             tempo++
             s++
@@ -61,7 +69,7 @@ btn_iniciar_cronometro.addEventListener('click', () => {
         }, 1000);
     } else {
         clearInterval(intervalId)
-        parar = true
+        parar_cronometro = true
     }
 })
 
