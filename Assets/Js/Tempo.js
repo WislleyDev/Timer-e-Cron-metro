@@ -36,7 +36,6 @@ btn_confirmar.addEventListener('click', () => {
     } else if (num_h.value > 24 || num_m.value > 59 || num_s.value > 59) {
         alert('Você Só Pode Ta de Zueira!')
     } else {
-        console.log(txt);
         num_h.value = ''
         num_m.value = ''
         num_s.value = ''
@@ -77,7 +76,7 @@ function converterParaSegundos_com_s(tempo) {
     }
 
     // Retorna o total de Segundos_com_s acumulados 🎯
-    console.log(totalsegundos);
+
     return totalsegundos
 }
 
