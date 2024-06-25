@@ -65,6 +65,47 @@ abbr {
     display: flex;
 }
 
+#timer h2 {
+    cursor: pointer;
+}
+
 #cronometro {
+    display: none;
+}
+
+#selecao_de_tempo {
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+#selecao_de_tempo > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    width: 95vw;
+    max-width: 400px;
+    height: 95vh;
+    max-height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#selecao_de_tempo > div > input {
+    padding: 5px;
+    border-radius: 10px;
+    width: 95vw;
+    max-width: 300px;
+    outline: none;
+    text-align: center;
+}
+
+#horas {
     display: none;
 }

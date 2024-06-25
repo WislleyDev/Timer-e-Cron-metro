@@ -11,7 +11,9 @@
         <h1 id="selected_timer">
             <abbr title="Trocar Para o Cronômetro">Timer</abbr>
         </h1>
-        <h2><span id="minutos">5m</span><span id="segundos">00s</span></h2>
+        <abbr title="Editar o Tempo do Timer">
+            <h2 id="tempo"><span id="horas">00h</span><span id="minutos">5m</span><span id="segundos">00s</span></h2>
+        </abbr>
 
         <div>
             <button id="btn_iniciar">INICIAR</button>
@@ -31,6 +33,22 @@
             <button id="btn_resetar2">RESET</button>
         </div>
     </section>
+    <div id="selecao_de_tempo">
+        <div>
+            <h1>Tempo do Timer</h1>
+            <h2>Horas:</h2>
+            <input type="number" name="num_h" id="num_h" class="input" maxlength="2" min="0" max="24">
+            <h2>Minutos:</h2>
+            <input type="number" name="num_m" id="num_m" class="input" maxlength="2" min="0" max="59">
+            <h2>Segundos:</h2>
+            <input type="number" name="num_s" id="num_s" class="input" maxlength="2" min="0" max="59">
+            <div>
+                <button class="escolhas" id="cancelar">Cancelar</button>
+                <button class="escolhas" id="confirmar">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <script src="Assets/Js/Tempo.js"></script>
     <script src="Assets/Js/Timer.js"></script>
     <script src="Assets/Js/Cronometro.js"></script>
 </body>
